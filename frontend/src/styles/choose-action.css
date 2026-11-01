@@ -1,0 +1,86 @@
+.choose-container {
+  min-height: 100vh;
+  background: #eff7f0;
+  padding: 80px 7%;
+}
+
+.choose-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 55px;
+}
+
+.choose-header h1 {
+  font-size: 38px;
+  color: #16834b;
+  margin-bottom: 15px;
+}
+
+.choose-header p {
+  color: #68766d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.choose-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.choose-card {
+  background: white;
+  padding: 40px 28px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.choose-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.choose-icon {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.choose-card h2 {
+  color: #16834b;
+  margin-bottom: 15px;
+}
+
+.choose-card p {
+  color: #68766d;
+  line-height: 1.7;
+  min-height: 55px;
+}
+
+.choose-card a {
+  text-decoration: none;
+}
+
+.choose-card button {
+  background: #16834b;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.choose-card button:hover {
+  background: #10683a;
+}
+
+@media (max-width: 850px) {
+  .choose-cards {
+    grid-template-columns: 1fr;
+  }
+}
